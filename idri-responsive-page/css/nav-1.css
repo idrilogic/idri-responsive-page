@@ -1,0 +1,604 @@
+
+
+body {
+	margin: 0; 
+	padding: 0; 
+	font-family: 'Arial', sans-serif;
+	background-color: #ECF0F1 ;
+}
+
+/* the navigation bar */ 
+
+.container {
+	display: block;
+	overflow: hidden;
+	max-width: 400vh;
+	margin: 0% 0 0 0;
+	padding: 40px 10%;
+	background-color: #324250;
+	color: #fff;
+	text-align: right;
+}
+
+a.logo {
+	display: block;
+	float: left;
+	font-size: 20px;
+	padding: 0px 16px;
+	animation: slideInFromLeft 1s ease-in;
+}
+
+.navigation a {
+	padding: 12px 16px;
+	text-decoration:none;
+	color: #fff;
+	animation: slideInFromRight 1s ease-in;
+}
+
+.navigation a.contact {
+	padding: 5px 16px;
+	background-color: steelblue;
+	border-radius: 50px;
+}
+
+.navigation a:hover {
+	border-bottom: 2px solid steelblue;
+	transition: scale(0.1);
+	font-size: 15px;
+}
+
+.contact:hover {
+	transition: 0.3s ease;
+	box-shadow: inset 50px 0 0 0 lightblue;
+	border-bottom: none;
+}
+
+
+@media screen and (max-width: 770px) {
+	a.logo {
+		display: block;
+		float: left;
+		font-size: 20px;
+		padding: 0px 16px;
+		animation: slideInFromLeft 1s ease-in;
+	}
+		
+	.navigation a {
+		display: none;
+	}
+
+	.responsive a {
+		margin-left:  5%;
+		display: table-caption;
+		text-align: left;
+	}
+
+	.navigation a.contact {
+		padding: 5px 16px;
+		background-color: #324250;
+		border-radius: 0px;
+	}
+
+	.contact:hover {
+		transition: 0s;
+		box-shadow: none;
+	}
+
+	.fa-bars {
+		display: block;
+	}
+}
+/* video section */
+
+.video-size {
+  	width: 100%;
+  	height: 50vh;
+  	object-fit: fill;
+}
+
+video {
+	object-fit: fill;
+	width:100%;
+	height:100%;
+}
+
+
+/* the overlay color */
+.color-overlay {
+	position: absolute;
+	z-index: -1;
+	opacity: 0.2;
+	top: 14%; 
+	right: 0;
+	background: steelblue;
+	width: 100%;
+	height: 50vh;
+}
+
+
+
+/* editing align of the text */
+section.text-video {
+	padding: 0;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+/* text on the played video */
+.header-content{
+	z-index: 1;
+	padding: 3% 0 0 0;
+}
+
+.header-content h1{
+	font-size:50px;
+	margin-bottom:0;
+}
+
+.header-content p{
+	top: 0;
+	font-size:1.5rem;
+	display:block;
+	padding-bottom:2rem;
+}
+
+.btn{
+	background: #5D6D7E;
+	color:#fff;
+	font-size:1.2rem;
+	padding: 1rem 2rem;
+	text-decoration: none;
+}
+
+.btn:hover {
+	font-size: 25px;
+}
+
+@media screen and (max-width: 500px) {
+	.header-content h1 {
+		padding-top: 10%;
+		font-size: 25px;
+	}
+
+	.header-content p{
+		top: 0;
+		font-size: 20px;
+		display:block;
+		padding-bottom: 10%;
+	}
+}
+
+/* the content of element inside of the cards*/
+
+section.content {
+	margin: 20% 7% 7% 7%;
+}
+
+.header {
+	font-size: 2rem;
+	text-align: center;
+	border-bottom: 2px solid steelblue;
+}
+
+div.img-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img{
+	text-align: center;
+	width: 85px;
+	margin: 10px 0 10px 0;
+}
+
+
+.block-div {
+	display: block;
+}
+
+.card {
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.4);
+	padding: 10px 30px;
+	margin: 1rem;
+}
+
+.card:hover {
+	transform: scale(1.01)
+}
+
+
+p.names {
+	text-align: center;
+	padding: 4px 8px;
+	border: 2px solid lightgrey;
+}
+
+p.pad {
+	margin-top: 40%;
+}
+
+@media screen and (max-width: 500px) {
+	section.content {
+		margin: 25% 7% 7% 7%;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	img{
+		text-align: center;
+		width: 50px;
+		margin: 20px 0 20px 0;
+	}
+
+	.card {
+		justify-content: center;
+		align-self: center;
+		margin: 0.5rem;
+		width: 60px;
+	}
+
+	h1.header {
+		padding-top: 50px;
+		font-size: 1.5rem;
+		text-align: center;
+		border-bottom: 2px solid steelblue;
+	}
+}
+/* about the crew */
+
+section.about-crew {
+	margin: 10% 0% 7% 0%;
+	background: #1C272C;
+	color: #fff;
+	padding: 5% 10%;
+}
+
+div.about-crew {
+	padding: 0 10%
+}
+
+h1.about-crew {
+	font-size: 30px;
+}
+
+p.crew-text {
+	letter-spacing: 1px;
+	line-height: 3;
+}
+
+@media screen and (max-width: 500px) {
+	section.about-crew {
+		padding: 5% 5%;
+	}
+
+	h1.about-crew {
+		font-size: 25px;
+	}
+
+	p.crew-text {
+		letter-spacing: 0;
+		line-height: 1.5;
+	}
+}
+
+
+/* courses section */
+
+section.courses {
+	margin: 0% 0% 3% 0%;
+	padding: 0% 10% 3% 10%;
+}
+
+.flex-boxes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-boxes p {
+	padding: 20px;
+}
+
+.card-courses {
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.4);
+	padding: 10px 30px;
+	margin: 1rem;
+}
+
+.card-courses:hover {
+	transform: scale(1.01)
+}
+
+
+/* About me section */
+section.me {
+	background: #2A414B;
+	color: #fff;
+	margin: 2% 0%;
+}
+
+div.me {
+	padding: 2% 10%;
+}
+
+div.me p {
+	line-height: 2;
+}
+
+
+
+@media screen and (max-width: 500px) {
+	div.me {
+		padding: 2% 5%;
+	}
+
+
+	.flex-boxes p {
+		padding: 5px 0;
+	}
+
+	.flex-boxes {
+		display: block;
+	}
+
+	.flex-boxes img {
+		width: 100px;
+		display: flex;
+		justify-content: center;
+		margin: 0 30% ;
+	}
+
+	.card-courses {
+		padding: 10px 30px;
+		margin: 1rem;
+	}
+
+	.card-courses:hover {
+		transform: scale(1.01)
+	}
+}
+
+/* contact section */
+section.contact-form {
+	margin: 5% 0% 5% 0%;
+	background-color: ;
+}
+
+section.contact-form h1 {
+	margin: 0 10%;
+}
+
+div.contact-form {
+	padding: 2% 00%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	font-weight: bold;
+	display: grid;
+	background: #F8F9F9;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 1)
+   	margin: auto;
+   	width: 50%;
+	padding: 100px;
+}
+
+
+form label {
+	padding: 25px 0 0 0;
+}
+
+
+form input {
+	font-size: 1rem;
+	border: none;
+	border-bottom: 2px lightgrey solid;
+	padding: 15px 20px ;
+	outline: none;
+	margin: 3% 0 3% 0;
+}
+
+.card-contact {
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.4);
+	padding: 10px 30px;
+	margin: 1rem;
+}
+
+.card-contact:hover {
+	transform: scale(1.01)
+}
+
+.submit {
+	padding: 10px;
+	margin: 0 30%;
+	border-radius: 10px;
+}
+
+.submit:hover {
+	transition: 0.5s ease;
+	cursor: pointer;
+	background: #839192; 
+	color: #fff;
+}
+
+
+textarea {
+	padding: 15px 20px;
+	font-size: 1rem;
+	width: auto;
+	height: 20vh;
+	margin: 3% 0;
+	resize: none;
+	border: 0;
+	border-bottom: 2px lightgrey solid;
+	outline: none;
+}
+
+
+@media screen and (max-width: 900px) {
+
+	section.contact-form {
+		margin: 5% 0% 5% 0%;
+	}
+
+
+	form {
+		font-weight: bold;
+		display: grid;
+		background: #F8F9F9;
+		border-radius: 20px;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 1)
+	   	margin: auto;
+	   	width: 75%;
+		padding: 0px;
+	}
+
+	form input {
+		font-size: 1rem;
+		border: none;
+		border-bottom: 2px lightgrey solid;
+		padding: 15px 20px ;
+		outline: none;
+		margin: 3% 2% 3% 2%;
+	}
+
+}
+
+/* footer */
+
+.footer {
+	background-color: #324250;
+	color: #fff;
+	bottom: 0;
+	margin: 0:;
+}
+
+.set {
+	margin: 0 10%;
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.right {
+	text-align: center;
+	padding: 0 0 5% 0;
+}
+
+
+
+
+
+/* social media */
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+
+.fa:hover {
+    transform: translateY(-5px);
+}
+
+
+.fa-facebook,
+.fa-twitter,
+.fa-google,
+.fa-youtube,
+.fa-instagram {
+  background: #fff;
+  color: #324250;
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+	.set {
+		margin: 0 5%;
+		padding: 50px 40px;
+	}
+
+
+	.right {
+		text-align: center;
+		padding: 0 0 5% 0;
+	}
+
+	.set {
+		display: block;
+	}
+
+
+	/* social media */
+	.fa {
+		padding: 10px;
+		font-size: 15px;
+		width: 15px;
+		text-align: center;
+		text-decoration: none;
+		margin: 3px 2px;
+	}
+
+}
+
+/*this for not translate the hamburger icon in (Y) derection */
+.fa-bars {
+	color: #fff;
+	display: block;
+	position: absolute;
+	top: 25px;
+	right: 35px;
+	display: block;
+}
+
+.fa-bars:hover {
+	transform: translateY(0px);
+}
+
+/* button to go top page */
+a.go-top {
+ 	position: fixed;
+  	bottom: 40px;
+  	right: 30px;
+  	font-size: 22px;
+  	padding: 10px;
+  	text-decoration: none;
+  	background: #e74c3c;
+  	color: white;
+  	text-align: center;
+  	display: block;
+}
+
+/* Animations */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
